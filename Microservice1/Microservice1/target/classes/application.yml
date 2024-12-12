@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb  # In-memory H2 database
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update  # Automatically update the schema
+    show-sql: true  # To show the generated SQL queries
+  h2:
+    console:
+      enabled: true  # Enable H2 console for browsing the database
+      path: /h2-console  # You can access H2 console via /h2-console in the browser
+server.port : 8081
